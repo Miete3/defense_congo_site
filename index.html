@@ -120,9 +120,11 @@
         }
 
         /* Bannière principale */
-        .hero {
-            height: 500px;
-            background-image: url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0fd71ef2-9620-46eb-ac1e-9ee159e04ea0.png');
+        
+        /*
+         .hero {
+            height: 550px;
+            background-image: url('https://www.adiac-congo.com/sites/default/files/img-20230815-wa0082.jpg');
             background-size: cover;
             background-position: center;
             display: flex;
@@ -131,7 +133,23 @@
             color: var(--blanc-france);
             text-align: center;
             position: relative;
-        }
+        } 
+*/ 
+
+    .hero {
+    height: 780px;
+    background-image: url('https://www.lhorizonafricain.com/wp-content/uploads/2023/08/Le-cnef-dEtat-major-general-des-Forces-armees-congolaises-le-general-de-division-Charles-Richard-Mondjo.webp');
+    background-size: cover;              /* L’image remplit toute la section sans déformation */
+    background-position: center;         /* Centre l’image */
+    background-repeat: no-repeat;        /* Évite les répétitions si l'image est plus petite */
+    background-color: #000;              /* Ajoute un fond de sécurité au cas où */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--blanc-france);
+    text-align: center;
+    position: relative;
+}
 
         .hero::before {
             content: '';
@@ -341,7 +359,7 @@
                 <img src="./images/cropped-Armoirie-COngo.png" alt="Emblème de la République de Rodbean - Aigle doré sur fond bleu avec couronne de lauriers et drapeau national"/>
                 <div class="logo-text">
                     <h1>Ministère de la Défense Nationale</h1>
-                    <p>République du Congoo</p>
+                    <p>République du Congo</p>
                 </div>
             </div>
         </div>
@@ -355,17 +373,22 @@
             <li class="nav-item">
                 <a href="#ministere">Le Ministère</a>
                 <div class="dropdown-content">
-                    <a href="#discours">Discours officiels</a>
-                    <a href="#organigramme">Organigramme</a>
-                    <a href="#histoire">Histoire militaire</a>
-                    <a href="#missions">Missions</a>
-                    <a href="#organisations">Organisations</a>
+                    <a href="./plus3.html">Discours officiels</a>
+                    <a href="./plus4.html">Organigramme</a>
+                    <a href="./plus5.html">Histoire militaire</a>
+                    <a href="./plus6.html">Missions</a>
+                    <a href="./plus7.html">Organisations</a>
                     <a href="#budget">Budget de défense</a>
                 </div>
             </li>
             <li class="nav-item">
-                <a href="#forces">Forces Armées</a>
-            </li>
+                <a href="#forces">Forces Armées</a> 
+               <div class="dropdown-content"> 
+                <a href="#armée-terre">Force terrestre</a> 
+                <a href="#marine-nationale">Force tactique</a>
+                <a href="#armé-air">Force Aérienne</a>
+               </div>
+        </li>
             <li class="nav-item">
                 <a href="#recrutement">Recrutement</a>
                 <div class="dropdown-content">
@@ -414,7 +437,7 @@
         <div class="cards">
             <div class="card">
                 <div class="card-image">
-                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5983cc14-07cd-456f-9c6a-ceb48e951391.png" alt="Cérémonie militaire officielle avec des soldats en uniforme dans les rues de la capitale de Rodbean" />
+                    <img src="https://lasemaineafricaine.info/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-15-a-16.35.59.webp" />
                 </div>
                 <div class="card-content">
                     <h3 class="card-title">Journée Nationale des Armées</h3>
@@ -425,7 +448,7 @@
 
             <div class="card">
                 <div class="card-image">
-                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/87e8939d-d799-42e1-85a9-a5ddcade6388.png" alt="Nouveaux équipements militaires présentés lors d'une exposition à la base aérienne de Sainte-Lucie" />
+                    <img src="https://topwar.ru/uploads/posts/2020-09/1600334472_1600334420.jpg" />
                 </div>
                 <div class="card-content">
                     <h3 class="card-title">Modernisation des Armées</h3>
@@ -436,12 +459,12 @@
 
             <div class="card">
                 <div class="card-image">
-                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ad71a71f-4776-4155-a417-9f62138d95ce.png" alt="Jeunes recrues lors d'une séance de formation au centre d'entraînement militaire de Fort-Royal" />
+                    <img src="https://i0.wp.com/ekolo242.cg/wp-content/uploads/2025/04/Concours-ENSOA-2025.png?fit=1920%2C1080&ssl=1" />
                 </div>
                 <div class="card-content">
-                    <h3 class="card-title">Campagne de Recrutement 2023</h3>
-                    <p>Rejoignez les forces armées rodbéennes et engagez-vous au service de la Nation. Inscriptions ouvertes.</p>
-                    <a href="#recrutement-2023" class="btn">Lire la suite</a>
+                    <h3 class="card-title">Campagne de Recrutement 2024</h3>
+                    <p>Rejoignez les forces armées Congolaises et engagez-vous au service de la Nation. Inscriptions ouvertes.</p>
+                    <a href="https://www.emploi.cg/recrutement-defense" class="btn" target="_blank">Lire la suite</a>
                 </div>
             </div>
         </div>
@@ -460,7 +483,7 @@
                 </ul>
             </div>
 
-            <!-- <div class="footer-section">
+            <div class="footer-section">
                 <h3>Forces Armées</h3>
                 <ul>
                     <li><a href="#armee-terre">Armée de Terre</a></li>
@@ -469,7 +492,7 @@
                     <li><a href="#gendarmerie">Gendarmerie</a></li>
                     <li><a href="#services-communs">Services Communs</a></li>
                 </ul>
-            </div> -->
+            </div>
 
             <div class="footer-section">
                 <h3>Ressources</h3>
