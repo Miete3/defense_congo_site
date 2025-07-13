@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Journée des Armées – Congo-Brazzaville</title>
+  <style>
+  /* RESET */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f2f5f9;
+    color: #222;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  header {
+    background: linear-gradient(to right, #003366, #004080);
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+    animation: fadeIn 2s ease forwards;
+  }
+
+  header h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+  header p {
+    max-width: 800px;
+    margin: auto;
+    font-size: 1.2rem;
+  }
+
+  section {
+    max-width: 1000px;
+    margin: 60px auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+  }
+
+  section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  section:hover {
+    transform: scale(1.02) translateY(0);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+
+  section h2 {
+    color: #004080;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    border-left: 5px solid #C8B560;
+    padding-left: 12px;
+    transition: all 0.5s;
+  }
+
+  section p {
+    margin-bottom: 16px;
+    text-align: justify;
+    transition: transform 0.3s ease;
+  }
+
+  section p:hover {
+    transform: scale(1.02);
+  }
+
+/* CSS */
+.retour-btn {
+  position: fixed;
+  top: 20px; left: 20px;
+  width: 55px; height: 55px;
+  background-color: #C8B560;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  text-decoration: none;
+  z-index: 1000;
+  animation: popUp 1s ease-out;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.retour-btn:hover {
+  transform: scale(1.2);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+}
+
+.retour-btn svg {
+  width: 26px;
+  height: 26px;
+  fill: #fff;
+}
+
+/* Animation */
+@keyframes popUp {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+  .return-btn svg {
+    width: 24px;
+    height: 24px;
+    fill: white;
+  }
+
+  footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    margin: 40px 0 20px;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+
+  @media(max-width: 768px) {
+    header h1 { font-size: 2rem; }
+    section { margin: 30px 20px; padding: 20px; }
+  }
+</style>
+
+</head>
+<body>
+
+
+<a href="index.html" class="retour-btn" aria-label="Retour">
+  <svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
+</a>
+
+
+  <!-- En-tête -->
+  <header>
+    <h1>Journée des Armées au Congo-Brazzaville</h1>
+    <p>Chaque 22 juin, la République du Congo rend hommage à ses forces armées à travers une célébration nationale empreinte de fierté, d’unité et de reconnaissance.</p>
+  </header>
+
+  <!-- Contexte historique -->
+  <section>
+    <h2> Origines et Histoire</h2>
+    <p>Instituée en 1961, la Journée Nationale des Armées symbolise la création officielle des Forces Armées Congolaises (FAC). Depuis cette date, elle marque un moment de commémoration et de réflexion sur l'engagement de l'armée dans la construction et la protection de la nation.</p>
+    <p>Les premières unités militaires congolaises ont été formées à l’époque de l’indépendance pour assurer la défense nationale, en remplacement des troupes coloniales. Depuis, l’armée a traversé plusieurs périodes clés : stabilisation politique, guerres civiles, réformes structurelles, et modernisation en cours.</p>
+  </section>
+
+  <!-- Valeur de la journée -->
+  <section>
+    <h2> Importance de cette journée</h2>
+    <p>Cette journée va bien au-delà des défilés militaires : elle est un temps fort de communion entre l’armée et le peuple. C’est une opportunité de reconnaître publiquement les sacrifices des militaires, d’honorer les disparus, et d’inspirer les nouvelles générations.</p>
+    <p>Les cérémonies permettent également de mettre en avant les valeurs de discipline, de loyauté, et de courage qui animent les forces de défense et de sécurité. À travers des discours, des cultes, des remises de médailles et des démonstrations, la nation témoigne son estime à ceux qui veillent à sa souveraineté.</p>
+  </section>
+
+  <!-- Programme -->
+  <section>
+    <h2> Programme du 22 juin</h2>
+    <p><strong>08h00 :</strong> Revue des troupes à la base Marien‑Ngouabi.</p>
+    <p><strong>10h00 :</strong> Grand défilé militaire : armée de terre, forces aériennes, marine, gendarmerie.</p>
+    <p><strong>12h00 :</strong> Remise de décorations et promotions solennelles.</p>
+    <p><strong>15h00 :</strong> Messe œcuménique et recueillement pour les soldats tombés.</p>
+    <p><strong>18h00 :</strong> Expositions, démonstrations de techniques de combat, et stands éducatifs pour les jeunes.</p>
+    <p><strong>20h00 :</strong> Bal populaire & feu d’artifice au bord du fleuve Congo.</p>
+  </section>
+
+  <!-- Enjeux contemporains -->
+  <section>
+    <h2>🔍 Enjeux actuels</h2>
+    <p>En 2025, les FAC sont engagées dans une série de réformes importantes : révision du statut militaire de 1962, amélioration des conditions de vie des soldats, renforcement des capacités techniques, et développement de partenariats avec d’autres armées africaines.</p>
+    <p>L’armée joue également un rôle crucial dans la sécurisation des élections, la lutte contre le terrorisme, la surveillance des frontières et la gestion des catastrophes naturelles.</p>
+  </section>
+
+  <!-- Message présidentiel -->
+  <section>
+    <h2> Message du Président</h2>
+    <p>Son Excellence Denis Sassou‑N’Guesso, Président de la République et Chef suprême des Armées, a réaffirmé cette année le rôle central des FAC dans la paix nationale :</p>
+    <p><em>« Servir avec honneur et dévouement, protéger avec rigueur et défendre la souveraineté nationale sont les piliers de notre armée. Le peuple congolais est fier de ses défenseurs. »</em></p>
+  </section>
+
+  <!-- Faits marquants -->
+  <section>
+    <h2> Faits récents</h2>
+    <p>Janvier 2025 : 100 officiers promus pour leur bravoure et leur discipline.</p>
+    <p>Mars 2025 : Lancement de l’usine militaire Afritex, dédiée à la confection d’uniformes et à l’autonomie logistique.</p>
+    <p>Juin 2025 : Premier symposium sur la cybersécurité militaire en Afrique centrale, organisé à Brazzaville avec des délégations de 9 pays.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 - Ministère de la Défense Nationale, République du Congo.<br />
+    Site informatif développé pour célébrer la Journée des Armées.
+  </footer>
+
+  <!-- JavaScript pour animations au scroll -->
+  <script>
+    const sections = document.querySelectorAll('section');
+
+    function revealOnScroll() {
+      const trigger = window.innerHeight * 0.85;
+      sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top < trigger) {
+          section.classList.add('visible');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('load', revealOnScroll);
+  </script> 
+
+<script>
+  function goBack() {
+    if (document.referrer !== "") {
+      window.history.back();
+    } else {
+      window.location.href = "index.html"; // ou une autre page de ton site
+    }
+  }
+</script>
+
+</body>
+</html>
